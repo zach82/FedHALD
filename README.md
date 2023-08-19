@@ -21,8 +21,8 @@ This code requires the following:
 * 2. Locate the 'run.sh' script in that directory.
 * 3. Set the executable permissions for the 'run.sh' script.
 * 4. Run the 'run.sh' script using sudo.
-*
-* Commands to execute:
+
+### Commands to execute:
 ```
 cd ./FedHALD/exps             # Navigate to the exps directory
 chmod +x ../exps/run.sh          # Set executable permissions
