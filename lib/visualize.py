@@ -60,7 +60,7 @@ def visualize(args, x, y):
     #            bbox_to_anchor=(0.9, 0), ncol=12, prop=font1, handletextpad=0.1)
 
     # fig.show()
-    plt.savefig("./protos_"+args.alg+".pdf", format='pdf', dpi=600)
+    plt.savefig("./FedHALDs_"+args.alg+".pdf", format='pdf', dpi=600)
 
 args = args_parser()
 args.alg = 'fedper'
@@ -75,9 +75,9 @@ else:
 np.random.seed(args.seed)
 random.seed(args.seed)
 
-x = np.load('/Users/tanyue/Desktop/saved/protos/' + args.alg + '_protos.npy', allow_pickle=True)
-y = np.load('/Users/tanyue/Desktop/saved/protos/' + args.alg + '_labels.npy', allow_pickle=True)
-# d = np.load('../protos/' + args.alg + '_idx.npy', allow_pickle=True)
+x = np.load('/Users/HALD/FedHALDs/' + args.alg + '_FedHALDs.npy', allow_pickle=True)
+y = np.load('/Users/HALD/FedHALDs/' + args.alg + '_labels.npy', allow_pickle=True)
+# d = np.load('../FedHALDs/' + args.alg + '_idx.npy', allow_pickle=True)
 
 tsne = TSNE()
 x = tsne.fit_transform(x)

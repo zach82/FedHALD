@@ -621,7 +621,7 @@ def test_inference_new_het_lt(args, local_model_list, test_dataset, classes_list
             total += len(labels)
         # 客户端i的最终准确率
         acc = correct / total
-        print('| User: {} | Global Test Acc w/o protos: {:.3f}'.format(idx, acc))
+        print('| User: {} | Global Test Acc w/o FedHALD: {:.3f}'.format(idx, acc))
         acc_list_l.append(acc)
 
         total = 0
@@ -647,7 +647,7 @@ def test_inference_new_het_lt(args, local_model_list, test_dataset, classes_list
                 total += len(labels)
 
             acc = correct / total
-            print('| User: {} | Global Test Acc with protos: {:.5f}'.format(idx, acc))
+            print('| User: {} | Global Test Acc with FedHALD: {:.5f}'.format(idx, acc))
             acc_list_g.append(acc)
 
     return acc_list_l, acc_list_g
@@ -704,11 +704,11 @@ def g_test_inference_new_het_lt(args, local_model_list, test_dataset, classes_li
         acc1 = correct1 / total
         acc2 = correct2 / total
         acc3 = correct3 / total
-        print('| User: {} | Global Test Acc w/o protos: {:.3f}'.format(idx, acc1))
+        print('| User: {} | Global Test Acc w/o FedHALD: {:.3f}'.format(idx, acc1))
         acc_list_l.append(acc1)
-        print('| User: {} | Global Test Acc with protos: {:.5f}'.format(idx, acc2))
+        print('| User: {} | Global Test Acc with FedHALD: {:.5f}'.format(idx, acc2))
         acc_list_g.append(acc2)
-        print('| User: {} | Global Test Acc with mixing protos: {:.5f}'.format(idx, acc3))
+        print('| User: {} | Global Test Acc with mixing FedHALD: {:.5f}'.format(idx, acc3))
         acc_list_m.append(acc3)
 
     return acc_list_l, acc_list_g, acc_list_m
