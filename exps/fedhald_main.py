@@ -52,8 +52,8 @@ def FedHALD_modelheter(args, train_dataset, test_dataset, user_groups, user_grou
     global_test_acc = np.mean(acc_list)
     global_protos_test_acc = np.mean(protos_acc_list)
     
-    print('For all users, mean of test acc without protos is {:.5f}'.format(global_test_acc))
-    print('For all users, mean of test acc with protos is {:.5f}'.format(global_protos_test_acc))
+    print('For all users, mean of test acc without FedHALD is {:.5f}'.format(global_test_acc))
+    print('For all users, mean of test acc with FedHALD is {:.5f}'.format(global_protos_test_acc))
 
     res_test_acc_list.append(global_test_acc)
     res_test_protos_acc_list.append(global_protos_test_acc)
@@ -63,9 +63,9 @@ def FedHALD_modelheter(args, train_dataset, test_dataset, user_groups, user_grou
     g_global_protos_test_acc = np.mean(g_protos_acc_list)
     g_global_protos_m_test_acc = np.mean(g_protos_m_acc_list)
 
-    print('For all users, mean of global test acc without protos is {:.5f}'.format(g_global_test_acc))
-    print('For all users, mean of global test acc with protos is {:.5f}'.format(g_global_protos_test_acc))
-    print('For all users, mean of global test acc with mixing protos is {:.5f}'.format(g_global_protos_m_test_acc))
+    print('For all users, mean of global test acc without FedHALD is {:.5f}'.format(g_global_test_acc))
+    print('For all users, mean of global test acc with FedHALD is {:.5f}'.format(g_global_protos_test_acc))
+    print('For all users, mean of global test acc with mixing FedHALD is {:.5f}'.format(g_global_protos_m_test_acc))
 
     g_res_test_acc_list.append(g_global_test_acc)
     g_res_test_protos_acc_list.append(g_global_protos_test_acc)
@@ -145,8 +145,8 @@ def FedHALD_modelheter(args, train_dataset, test_dataset, user_groups, user_grou
         global_test_acc = np.mean(acc_list)
         global_protos_test_acc = np.mean(protos_acc_list)
 
-        print('For all users, mean of test acc without protos is {:.5f}'.format(global_test_acc))
-        print('For all users, mean of test acc with protos is {:.5f}'.format(global_protos_test_acc))
+        print('For all users, mean of test acc without FedHALD is {:.5f}'.format(global_test_acc))
+        print('For all users, mean of test acc with FedHALD is {:.5f}'.format(global_protos_test_acc))
         res_test_acc_list.append(global_test_acc)
         res_test_protos_acc_list.append(global_protos_test_acc)
 
@@ -155,9 +155,9 @@ def FedHALD_modelheter(args, train_dataset, test_dataset, user_groups, user_grou
         g_global_protos_test_acc = np.mean(g_protos_acc_list)
         g_global_protos_m_test_acc = np.mean(g_protos_m_acc_list)
 
-        print('For all users, mean of global test acc without protos is {:.5f}'.format(g_global_test_acc))
-        print('For all users, mean of global test acc with protos is {:.5f}'.format(g_global_protos_test_acc))
-        print('For all users, mean of global test acc with mixing protos is {:.5f}'.format(g_global_protos_m_test_acc))
+        print('For all users, mean of global test acc without FedHALD is {:.5f}'.format(g_global_test_acc))
+        print('For all users, mean of global test acc with FedHALD is {:.5f}'.format(g_global_protos_test_acc))
+        print('For all users, mean of global test acc with mixing FedHALD is {:.5f}'.format(g_global_protos_m_test_acc))
         g_res_test_acc_list.append(g_global_test_acc)
         g_res_test_protos_acc_list.append(g_global_protos_test_acc)
         g_res_test_protos_m_acc_list.append(g_global_protos_m_test_acc)
