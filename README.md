@@ -17,18 +17,16 @@ This code requires the following:
 * Experiments are run on MNIST, CIFAR-10 and CIFAR-100.
 
 ## Quick Run Instructions:
-* 1. Navigate to the 'FedHALD/scripts' directory using the terminal.
+* 1. Navigate to the 'FedHALD/exps' directory using the terminal.
 * 2. Locate the 'run.sh' script in that directory.
-* 3. Copy the 'run.sh' file to the 'FedHALD/exps/' directory.
-* 4. Set the executable permissions for the 'run.sh' script.
-* 5. Run the 'run.sh' script using sudo.
+* 3. Set the executable permissions for the 'run.sh' script.
+* 4. Run the 'run.sh' script using sudo.
 *
 * Commands to execute:
 ```
-cd ./FedHALD/scripts             # Navigate to the scripts directory
-cp run.sh ../exps/               # Copy the script to the exps directory
+cd ./FedHALD/exps             # Navigate to the exps directory
 chmod +x ../exps/run.sh          # Set executable permissions
-sudo ../exps/run.sh              # Run the script with sudo
+sudo ./run.sh              # Run the script with sudo
 ```
 
 
