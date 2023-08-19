@@ -1,5 +1,5 @@
-# FedHALD
-FedHALD: Personalized Models Meet Global Knowledge: Accommodating Heterogeneity in Federated Learning
+# FedHALD: Personalized Models Meet Global Knowledge: Accommodating Heterogeneity in Federated Learning
+
 
 ## Requirments
 This code requires the following:
@@ -16,6 +16,20 @@ This code requires the following:
 [CIFAR10, CIFAR100](http://www.cs.toronto.edu/∼kriz/cifar.html)
 * Experiments are run on MNIST, CIFAR-10 and CIFAR-100.
 
+## Quick Run Instructions:
+* 1. Navigate to the 'FedHALD/scripts' directory using the terminal.
+* 2. Locate the 'run.sh' script in that directory.
+* 3. Copy the 'run.sh' file to the 'FedHALD/exps/' directory.
+* 4. Set the executable permissions for the 'run.sh' script.
+* 5. Run the 'run.sh' script using sudo.
+*
+* Commands to execute:
+```
+cd ./FedHALD/scripts             # Navigate to the scripts directory
+cp run.sh ../exps/               # Copy the script to the exps directory
+chmod +x ../exps/run.sh          # Set executable permissions
+sudo ../exps/run.sh              # Run the script with sudo
+```
 
 
 ## Running the experiments
@@ -62,3 +76,4 @@ The default values for various paramters parsed to the experiment are given in `
 
 ## Acknowledgements
 We built our project based on the foundational work found in [FedProto](https://github.com/yuetan031/FedProto). Our version includes modifications and enhancements tailored to our specific needs. We extend our gratitude to the original creators and maintainers of FedProto for their contribution. For anyone interested in the source, please explore the original [FedProto](https://github.com/yuetan031/FedProto).
+
